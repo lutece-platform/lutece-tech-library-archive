@@ -201,6 +201,11 @@ public final class ZipGenerateUtil
 		return ARCHIVE_MIME_TYPE_ZIP;
 	}
 
+	/**
+	 * Replace every accented character with its equivalent without accent.
+	 * @param strString the string to remove accents from
+	 * @return The given string without accents
+	 */
 	private static String replaceAccent( String strString )
 	{
 		return Normalizer.normalize( strString, Normalizer.Form.NFC ).replaceAll( "[^\\p{ASCII}]", "" );
