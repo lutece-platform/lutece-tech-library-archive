@@ -12,7 +12,7 @@
     <description>Archive library</description>
     
 	<properties>
-		<jiraProjectName>LIBRARYAARCHIVE</jiraProjectName>
+		<jiraProjectName>LIBRARYARCHIVE</jiraProjectName>
 		<jiraComponentId>10692</jiraComponentId>
 		<sonar.host.url>http://dev.lutece.paris.fr/sonar</sonar.host.url>
 	</properties>
@@ -38,8 +38,8 @@
 	
     
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-workflow-core</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-workflow-core</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/library/library-workflow-core</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-archive</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-archive</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/library/library-archive</url>
     </scm>
 </project>
