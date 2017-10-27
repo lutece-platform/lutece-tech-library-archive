@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Library Archive</title>
+    </properties>
+    <body>
+        <section name="Library Archive">
+            <subsection name="Introduction">
+                <p>This library provides methods to archive directory.</p>
+            </subsection>
+        </section>
+    </body>
+</document>
+

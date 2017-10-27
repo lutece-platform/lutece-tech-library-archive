@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <body>
+        <links>
+            <item name="FR" href="/fr/index.html" />
+        </links>
+        
+        <menu name="Downloads" inherit="bottom">
+            <item name="Released versions" href="../../stable_builds/plugins/library-archive/"/>
+            <item name="Nightly builds" href="../../nightly_builds/plugins/library-archive/" />
+        </menu>
+        
+        <menu ref="reports" />
+    </body>
+</project>
+
