@@ -66,6 +66,7 @@ public final class ZipGenerateUtil
 	{
 		BufferedOutputStream bos = null;
 		File folderToZip;
+                File zipFolder;
 		ZipOutputStream zos = null;
 		StringBuilder strDestinationFile = new StringBuilder( );
 		strDestinationFile.append( strArchiveDestination );
@@ -75,6 +76,11 @@ public final class ZipGenerateUtil
 		try
 		{
 			folderToZip = new File( strFolderToArchive );
+                        zipFolder = new File( strArchiveDestination );
+                        if ( !zipFolder.exists( ) )
+			{
+				zipFolder.mkdirs( );
+			}
 			bos = new BufferedOutputStream( new FileOutputStream( strDestinationFile.toString( ) ) );
 			zos = new ZipOutputStream( bos );
 			zipDirectory( folderToZip, zos, "" );
