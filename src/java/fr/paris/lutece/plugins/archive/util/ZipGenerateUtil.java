@@ -81,7 +81,10 @@ public final class ZipGenerateUtil
 		}
 		finally
 		{
-			zos.close( );
+                        if ( zos != null )
+                        {
+                            zos.close( );
+                        }
 		}
 	}
 
@@ -176,7 +179,10 @@ public final class ZipGenerateUtil
 
 					finally
 					{
-						bis.close( );
+						if ( bis != null )
+                                                {
+                                                    bis.close( );
+                                                }
 					}
 				}
 			}
