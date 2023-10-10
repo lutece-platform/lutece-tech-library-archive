@@ -1,22 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <parent>
-        <artifactId>lutece-library-pom</artifactId>
+        <artifactId>lutece-global-pom</artifactId>
         <groupId>fr.paris.lutece.tools</groupId>
-        <version>2.0.3</version>
+        <version>6.0.0</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.plugins</groupId>
     <artifactId>library-archive</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <name>Library Archive</name>
     <description>Archive library</description>
-    
-	<properties>
-		<jiraProjectName>LIBRARYARCHIVE</jiraProjectName>
-		<jiraComponentId>10692</jiraComponentId>
-		<sonar.host.url>http://dev.lutece.paris.fr/sonar</sonar.host.url>
-	</properties>
-	
+
+    <properties>
+        <jiraProjectName>LIBRARYARCHIVE</jiraProjectName>
+        <jiraComponentId>10692</jiraComponentId>
+        <sonar.host.url>http://dev.lutece.paris.fr/sonar</sonar.host.url>
+    </properties>
+
     <repositories>
         <repository>
             <id>luteceSnapshot</id>
@@ -35,11 +37,11 @@
             </snapshots>
         </repository>
     </repositories>
-	
-    
+
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-archive</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/library/library-archive</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/library/library-archive</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-tech-library-archive.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-tech-library-archive.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-tech-library-archive.git</url>
     </scm>
+
 </project>
