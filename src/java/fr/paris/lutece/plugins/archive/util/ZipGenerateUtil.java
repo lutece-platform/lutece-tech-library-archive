@@ -137,7 +137,7 @@ public final class ZipGenerateUtil
 					strEntry = new StringBuilder( );
 					strEntry.append( path );
 					strEntry.append( replaceAccent( entries[j].getName( ) ) );
-					strEntry.append( File.separator );
+					strEntry.append( '/' );
 					strDirectory = strEntry.toString( );
 
 					// ZipEntry ze = new ZipEntry( strDirectory );
@@ -220,6 +220,6 @@ public final class ZipGenerateUtil
 	 */
 	private static String replaceAccent( String strString )
 	{
-		return Normalizer.normalize( strString, Normalizer.Form.NFC ).replaceAll( "[^\\p{ASCII}]", "" );
+		return Normalizer.normalize( strString, Normalizer.Form.NFD ).replaceAll( "\\p{InCombiningDiacriticalMarks}", "" ).replaceAll( "[^\\p{ASCII}]", "" );
 	}
 }
